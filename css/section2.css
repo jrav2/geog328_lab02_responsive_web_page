@@ -1,0 +1,68 @@
+/* The sidebar menu (From W3Schools link) */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 130px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Keep as a lower layer */
+  top: 65px; 
+  left: 8px;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #d3d307;
+}
+
+/* Style page content */
+/* Margin-left makes Same as the width of the sidebar */
+/*
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+*/
+.content {
+    margin-left: 160px
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+/* Trying to make a max-width < 800 px for sidebar*/
+/* Actually this is almost completely useless now, the default settings are enough */
+@media screen and (max-width: 800px){
+  .sidenav {
+    width: 130px;
+    /*top: 350px;*/
+    left: 8px; /* align to the left edge on small screens */
+    padding-top: 12px;
+  }
+
+  /* make sure the main content uses the new sidebar width */
+  /*
+  .main {
+    margin-left: 50px; 
+    padding: 0px 8px;
+  }
+    */
+  /* reduce the font-size of sidebar links so they fit better */
+  .sidenav a { font-size: 18px; }
+  .content{
+    z-index: 0 /* Try and make topnav go over it*/
+  }
+}
