@@ -9,6 +9,66 @@
 
     <!-- Including the Font Awesome CSS library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- "Meet The Team" formatting from W3Schools -->
+    <style>
+        html {
+        box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+
+        .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+        padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .title {
+        color: grey;
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #0383a2;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -59,9 +119,64 @@
             <br>
             <br>
             The lab 1 instructions mentioned making Markdown in Notepad and Typora.
-            <br>
             Should investigate later.
         </p>
+    </div>
+
+    <!-- "Meet the Team" images -->
+    <h2>Relevant Images</h2>
+    <br>
+
+    <div class="row">
+    <div class="column">
+        <div class="card">
+        <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">  -->
+        <a href="https://imgflip.com/i/a90l4c"><img src="https://i.imgflip.com/a90l4c.jpg" 
+            title="made at imgflip.com" alt = "Confused Tom" style = "width:100%"/></a>
+            <!-- Following is part of the same upper link-->
+            <!--| <div><a href="https://imgflip.com/memegenerator"></a></div> |-->
+        <div class="container">
+            <h2>Thomas</h2>
+            <p class="title">First Markdown Image</p>
+            <p>Tom was the first thing I thought of Lab 1's required image, 
+                despite referencing monkeys several times in that assignment.<br> <br>
+                I had (and am still having) trouble displaying this 'meme' I made for Lab 1 on
+                 that GitHub page, so I'm showing it here. 
+            </p>
+            <p>thomas@t&j.com</p>
+            <p><button class="button">Contact</button></p>
+        </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+        <img src="img/UW Logo.png" alt="University of Washington Logo" style="width:100%">
+        <div class="container">
+            <h2>University of Washington</h2>
+            <p class="title">Education Center</p>
+            <p>I am making this website courtesy of Geog 328 as taught 
+                by Bo Zhao and Alex Kirchmeier, with assignments graded by Sechung Kim</p>
+            <p>nonUWemail@uw.edu</p>
+            <p><button class="button">Contact</button></p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="card">
+        <img src="img/w3schools-logo-icon.png" alt="W3Schools Logo" style="width:80%">
+        <div class="container">
+            <h2>W3Schools</h2>
+            <p class="title">Information Site</p>
+            <p>Much of the additional information for making this website came from W3Schools 
+                and a variety of links on the site. 
+            </p>
+            <p>gethelp@W3.com</p>
+            <p><button class="button">Contact</button></p>
+        </div>
+        </div>
+    </div>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

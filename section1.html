@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<!-- Following style section is for the zebra table-->
+
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+
 <body>
 
     <!-- Navigation bar -->
@@ -35,15 +55,51 @@
     <!-- Page content -->
     <div class="content">
         <!-- Section 1 content -->
-        This is section 1.
+        Here are some of the specific courses I have either completed or am completing with relevance to 
+        this class. 
         <br>
-        <!-- Two <br>'s for two enters between lines-->
         <br>
-        There is no other content for this page.
+        A possible alteration to this table in the future is <br>
+        1| Making the topics rest on the left side<br>
+        2| Making the table change format when the screen shrinks, like the topnav does.<br>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>
+
+
+    <!-- For the Zebra Table-->
+    <h2>Previous and Current Course Experience</h2>
+    <p>As described in W3Schools page, the nth-child() selector above changes the color of every other row, making this table.</p>
+
+    <table>
+    <tr>
+        <th>CSE</th>
+        <th>Informatics</th>
+        <th>Quantitative Science</th>
+        <th>Geography</th>
+    </tr>
+    <tr>
+        <td>123</td>
+        <td>201</td>
+        <td>381</td>
+        <td>360</td>
+    </tr>
+    <tr>
+        <td>373</td>
+        <td>-</td>
+        <td>-</td>
+        <td>315</td>
+    </tr>
+    <tr>
+        <td>416</td>
+        <td>-</td>
+        <td>-</td>
+        <td>482</td>
+    </tr>
+
+    </table>
+
 
 </body>
 
